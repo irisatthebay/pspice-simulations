@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-Q3"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q3\Q3-PSpiceFiles\SCHEMATIC1\Q3.sim ] 
+
+** Creating circuit file "Q3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Zaid\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

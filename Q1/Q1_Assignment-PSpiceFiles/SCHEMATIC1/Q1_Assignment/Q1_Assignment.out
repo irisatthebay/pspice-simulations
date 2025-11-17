@@ -1,0 +1,86 @@
+
+**** 11/16/25 18:47:01 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_Assignment"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q1\Q1_Assignment-PSpiceFi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Q1_Assignment.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Zaid\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source Q1_ASSIGNMENT
+R_R1         N00128 N00115  70 TC=0,0 
+R_R2         0 N00128  20 TC=0,0 
+R_R3         N00128 N00115  30 TC=0,0 
+R_R4         0 N00128  5 TC=0,0 
+V_V1         N00115 0 200Vdc
+
+**** RESUMING Q1_Assignment.cir ****
+.END
+
+**** 11/16/25 18:47:01 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_Assignment"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q1\Q1_Assignment-PSpiceFi
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00115)  200.0000 (N00128)   32.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.000E+00
+
+    TOTAL POWER DISSIPATION   1.60E+03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/16/25 18:47:01 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_Assignment"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q1\Q1_Assignment-PSpiceFi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

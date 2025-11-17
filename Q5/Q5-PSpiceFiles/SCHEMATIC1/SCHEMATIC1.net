@@ -1,0 +1,8 @@
+* source Q5
+R_R1         N00122 N00129  4 TC=0,0 
+C_C1         0 N00129  2  TC=0,0 
+V_V1         N00122 0  
++PULSE 0 20 100m 10m 1 120 240
+R_R2         N01503 N00129  1 TC=0,0 
+X_U1         N01503 0 Sw_tOpen PARAMS: tOpen=60 ttran=1u Rclosed=0.01
++  Ropen=1Meg

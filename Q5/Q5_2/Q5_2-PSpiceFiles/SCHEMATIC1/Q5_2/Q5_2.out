@@ -1,0 +1,111 @@
+
+**** 11/18/25 01:16:30 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q5_2"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5_2\Q5_2-PSpiceFiles\SCHEMATIC
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Q5_2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Zaid\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 480 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source Q5_2
+V_V1         N00169 0  
++PULSE 0 12 100m 10m 1 120 240
+C_C1         N00169 N00176  2  TC=0,0 
+I_I1         N00183 N00176 DC 2Adc  
+R_R1         0 N00183  3 TC=0,0 
+R_R2         N00183 N00176  4 TC=0,0 
+X_U1         N00176 N00183 Sw_tClose PARAMS: tClose=60 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+
+**** RESUMING Q5_2.cir ****
+.END
+
+**** 11/18/25 01:16:30 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q5_2"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5_2\Q5_2-PSpiceFiles\SCHEMATIC
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Smod       
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 11/18/25 01:16:30 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q5_2"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5_2\Q5_2-PSpiceFiles\SCHEMATIC
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00169)    0.0000 (N00176)    8.0000 (N00183) 444.1E-18 (X_U1.3)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    X_U1.V1      0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/18/25 01:16:30 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q5_2"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5_2\Q5_2-PSpiceFiles\SCHEMATIC
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+

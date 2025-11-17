@@ -1,0 +1,110 @@
+
+**** 11/18/25 01:13:13 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q4"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5-PSpiceFiles\SCHEMATIC1\Q4.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Q4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Zaid\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 400 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source Q5
+R_R1         N00122 N00129  4 TC=0,0 
+C_C1         0 N00129  2  TC=0,0 
+V_V1         N00122 0  
++PULSE 0 20 100m 10m 1 120 240
+R_R2         N01503 N00129  1 TC=0,0 
+X_U1         N01503 0 Sw_tOpen PARAMS: tOpen=60 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+
+**** RESUMING Q4.cir ****
+.END
+
+**** 11/18/25 01:13:13 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q4"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5-PSpiceFiles\SCHEMATIC1\Q4.sim 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.Smod       
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 11/18/25 01:13:13 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q4"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5-PSpiceFiles\SCHEMATIC1\Q4.sim 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00122)    0.0000 (N00129)    0.0000 (N01503)    0.0000 (X_U1.3)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    X_U1.V1     -1.000E-12
+
+    TOTAL POWER DISSIPATION   1.00E-12  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/18/25 01:13:13 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q4"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5-PSpiceFiles\SCHEMATIC1\Q4.sim 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .11
+

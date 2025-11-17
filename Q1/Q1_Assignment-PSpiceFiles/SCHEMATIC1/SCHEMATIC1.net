@@ -1,0 +1,6 @@
+* source Q1_ASSIGNMENT
+R_R1         N00128 N00115  70 TC=0,0 
+R_R2         0 N00128  20 TC=0,0 
+R_R3         N00128 N00115  30 TC=0,0 
+R_R4         0 N00128  5 TC=0,0 
+V_V1         N00115 0 200Vdc

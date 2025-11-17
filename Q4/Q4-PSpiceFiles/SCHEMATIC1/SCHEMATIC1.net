@@ -1,0 +1,8 @@
+* source Q4
+R_R1         N00170 N00177  12k TC=0,0 
+R_R2         N00177 N00190  2k TC=0,0 
+R_R3         N00190 N00204  10k TC=0,0 
+R_R4         0 N00177  24k TC=0,0 
+R_R5         0 N00204  1k TC=0,0 
+I_I1         N00190 0 DC 3mAdc  
+V_V1         N00170 0 36Vdc

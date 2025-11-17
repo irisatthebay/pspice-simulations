@@ -1,0 +1,51 @@
+
+**** 11/17/25 22:29:02 *** PSpice 25.1.0 (14 September 2025) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q5_2"  [ C:\Users\Zaid\OneDrive\Desktop\College\Circuit Theory Assignment\Q5\Q5_2\Q5_2-PSpiceFiles\SCHEMATIC
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Q5_2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Zaid\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 360 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source Q5_2
+V_V1         N00169 N00220  
++PULSE 0 12 100m 10m 1 90 180
+C_C1         N00169 N00176  2  TC=0,0 
+I_I1         N00183 N00176 DC 2Adc  
+R_R1         N00220 N00183  3 TC=0,0 
+R_R2         N00183 N00176  4 TC=0,0 
+
+**** RESUMING Q5_2.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N00169 is floating
+
+ERROR(ORPSIM-15142): Node N00220 is floating
+
+ERROR(ORPSIM-15142): Node N00176 is floating
+
+ERROR(ORPSIM-15142): Node N00183 is floating
+
