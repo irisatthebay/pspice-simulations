@@ -1,0 +1,8 @@
+* source Q6_2
+L_L1         N00158 0  3H  TC=0,0 
+R_R1         0 N00158  2 TC=0,0 
+R_R2         0 N00144  4 TC=0,0 
+I_I1         N00144 0 DC 0Adc AC 0Aac
++PULSE 0 6 100m 10m 1 28 56
+X_U3         N00144 N00158 Sw_tOpen PARAMS: tOpen=28 ttran=1u Rclosed=0.01
++  Ropen=1Meg

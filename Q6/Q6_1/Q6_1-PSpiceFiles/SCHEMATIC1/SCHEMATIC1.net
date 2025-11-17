@@ -1,0 +1,8 @@
+* source Q6_1
+R_R1         N00144 N00165  3 TC=0,0 
+R_R2         N00165 N00171  2 TC=0,0 
+V_V1         N00144 0  
++PULSE 0 25 100m 10m 1 16 32
+L_L1         N00171 0  4H  TC=0,0 
+X_U1         N00165 0 Sw_tClose PARAMS: tClose=8 ttran=1u Rclosed=0.01
++  Ropen=1Meg
